@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EyaTlig_Mesure_de_glycemie</string>
+    <string name="title">Mesure de niveau de glycémie</string>
+    <string name="sbaAge">votre age\n</string>
+</resources>
