@@ -2,4 +2,7 @@
     <string name="app_name">EyaTlig_Mesure_de_glycemie</string>
     <string name="title">Mesure de niveau de glycémie</string>
     <string name="sbaAge">votre age\n</string>
+    <string name="val_mes">Valeur mesurée (en mmol/l)</string>
+    <string name="jeune">Est-ce que vous jeûnez?\n</string>
+    <string name="res">Resultat:</string>
 </resources>
