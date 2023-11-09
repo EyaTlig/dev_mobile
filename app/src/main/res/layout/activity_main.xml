@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    android:background="@drawable/b5"
+    android:background="@drawable/b2"
     tools:context=".MainActivity">
     <!-- Conteneur principal (LinearLayout) avec des attributs -->
 
@@ -25,7 +25,7 @@
     <!-- Première TextView pour le titre avec des styles personnalisés -->
 
     <TextView
-        android:id="@+id/ageValueTextView"
+        android:id="@+id/tvage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Votre âge : 0"
@@ -35,13 +35,14 @@
         android:layout_marginBottom="20dp" />
     <!-- Deuxième TextView affichant l'âge avec un ID -->
 
+    <!-- Barre de défilement (SeekBar) pour l'âge -->
+
     <SeekBar
         android:id="@+id/ageSeekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="120"
-        android:layout_marginBottom="20dp" />
-    <!-- Barre de défilement (SeekBar) pour l'âge -->
+        android:layout_marginBottom="20dp"
+        android:max="120" />
 
     <View
         android:layout_width="match_parent"
@@ -91,31 +92,40 @@
     </RadioGroup>
 
     <EditText
+        android:id="@+id/etValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/val_mes"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        />
     <!-- Champ de texte pour entrer une valeur -->
 
     <Button
-        android:id="@+id/btconsulter"
+        android:id="@+id/btnConsulter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Consulter"
         android:background="@drawable/btn_shape"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:onClick="Calculer"
+
+        />
     <!-- Bouton "Consulter" avec un ID -->
 
     <TextView
+        android:id="@+id/tvResult"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/res"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        />
     <!-- Dernière TextView pour le résultat avec des styles personnalisés -->
 </LinearLayout>
