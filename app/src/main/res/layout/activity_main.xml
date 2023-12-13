@@ -116,16 +116,4 @@
         />
     <!-- Bouton "Consulter" avec un ID -->
 
-    <TextView
-        android:id="@+id/tvResult"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/res"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_marginBottom="16dp"
-        />
-    <!-- Dernière TextView pour le résultat avec des styles personnalisés -->
 </LinearLayout>

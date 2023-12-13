@@ -1,15 +1,5 @@
 package com.example.eyatlig_mesure_de_glycemie.model;
 
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.SeekBar;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.example.eyatlig_mesure_de_glycemie.R;
-import com.example.eyatlig_mesure_de_glycemie.view.MainActivity;
 
 public class Patient {
     int age;
@@ -19,6 +9,7 @@ public class Patient {
     //notify model --> controler
     public String getresult()
     {
+
         return result;
     }
     //update controller --> view (1/2)
